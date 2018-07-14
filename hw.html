@@ -1,1 +1,257 @@
+<!DOCTYPE html>
 
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Homework | Stat 100</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<link href="libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="libs/highlightjs-1.1/highlight.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta name="msapplication-config" content="icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<br>
+<br>
+<br>
+  <center><h1 class="realtitle">STAT 100 @ UIUC</h1></center>
+<center>
+  <h2>
+    <a class="creatednav" href="index.html">Home</a> 
+    <a class="creatednav" href="syllabus.html">Syllabus</a> 
+    <a class="creatednav" href="calendar.html">Calendar</a> 
+    <a class="creatednav" href="hw.html">Homework</a> 
+     <a class="creatednav" href="exams.html">Exams</a> 
+     <a class="creatednav" href="faqs.html">FAQs</a> 
+  </h2>
+</center>
+
+<br>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Homework | Stat 100</h1>
+
+</div>
+
+<div>	
+<td bgcolor="white" valign="top" class="tdborder" align=center>
+					<h2 align=center><b> Stat 100 Homework Policy</b></h2>
+					<div align=left>
+						<b>All homework is done online using <a href="http://www.lon-capa.uiuc.edu" 
+						target="_blank">LON-CAPA</a>. Homework is due twice a week at midnight 
+						(11:59 pm).  See the course calendar for due dates. </b>
+						<br><br>
+						The longer homeworks are worth more points. You can look on Compass to see 
+						how many points each homework is worth and how many points you were awarded. 
+						Ignore the gradebook on Lon Capa, we're ONLY using the Compass gradebook.
+						<br><br>
+						You can use any computer, but if you have trouble accessing any of the 
+						programs or need any type of help, you need to go to the Statistics 
+						Computer Lab in 23 Illini Hall where Stat 100 TAs and instructors are 
+						available to offer help.
+						<br><br>
+						Lon-Capa grades your work immediately, and gives you the opportunity 
+						to submit your answers multiple times until you get it correct.  Most of our
+						Lon Capa homework is randomized, so everyone will get different numbers for the
+						same problems.
+						
+						<H2 align=left><u>No Late homework</u></H2><p>
+						
+						Late homework is NOT accepted on Lon-Capa. However, Lon-Capa grades 
+						each problem in the assignment separately, so if you do 70% of the homework 
+						correctly before the due date, you'll get credit for that 70%. 
+						<br><br>
+						
+						<b><u><red>READ THIS:</u></b>
+						<i>However, I do understand there are circumstances where you miss a homework 
+						assignment. To account for the fact that Lon Capa does not accept late homework, 
+						I will drop your 3 lowest homework scores at the end of the semester.  This means 
+						that you can miss up to 3 full assignments without any penalty.  However, these are 
+						the lowest scores by percent.So even if you get a 0/10 on one assignment and a 4/41 on 
+						another assignment, the 0/10 is dropped since 
+						that is a lower percentage (although the 4/41 would hurt your overall percentage more).
+						</i></red>
+
+						
+						<H3 align=left>For frequently asked questions about homework,
+						 see the <a href="faq.html" 
+						target="_blank">FAQ Page</a>!</H3>
+						
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+	
+<!--Middle Table-->
+<div align=center>
+		<h2><strong>Statistics 100 Fall 2018 Sections</strong></h2>
+		<table bgcolor="white" border="5" width="300px">
+			<tbody>
+				<tr>
+					<td width="33.3%">
+						<br>
+						<b><font color="black" size="3"></font></b>
+						<center>
+							<b><font color="black" size="3">Section L1 - Karle Flanagan<br>
+							TR 12:30pm-1:50pm<br>
+							Lincoln Hall Theater<br><br>
+							
+							Section L2 - Karle Flanagan<br>
+							MWF 12:00pm-12:50pm<br>
+							Lincoln Hall Theater<br>
+							<br>
+							<b>Online Section - Ellen Fireman</b><br>
+							<br>
+							</font></b>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+						
+						
+						
+						
+						
+						
+
+
+
+<script>
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
