@@ -136,7 +136,7 @@ $(document).ready(function () {
 
 <br>
 
-<div class="fluid-row" id="header">
+<div class="panel-group" id="header">
 
 
 
@@ -150,49 +150,91 @@ $(document).ready(function () {
                
                    <h2>Registration FAQs</h2><br>
 				
-				
-                    <button class="accordion">Q: It says on Course Explorer that Stat 100 is full and I want to register, what should I do?</button>
-                <div class="panel">    
-                    <p>A: <i>Try registering anyway, sometimes this doesn't get updated.  If you get an error when registering, contact your instructor ASAP.</i></p>
-                </div>
-					<br />
-				
-                
-                    <button class="accordion">Q: I've registered late for Stat 100.  How do I get caught up?</button>  
-				<div class="panel">	
-					<p>A: <i> Email our course technology specialist (David Collier) and he will get you caught up.  His email is <a href="mailto:dacollie@illinois.edu">dacollie@illinois.edu</a>.  Be sure to include your name, netID, and the section you are registered for.</i></p>
-                </div>
-		<br />
+        <div class="panel-group" id="registration_faq" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Q: It says on Course Explorer that Stat 100 is full and I want to register, what should I do?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                A: <i>Try registering anyway, sometimes this doesn't get updated.  If you get an error when registering,
+                  contact your instructor ASAP.</i>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Q: I've registered late for Stat 100.  How do I get caught up?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                A: <i> Email our course technology specialist (David Collier) and he will get you caught up.  His email is <a href="mailto:dacollie@illinois.edu">dacollie@illinois.edu</a>.  Be sure to include your name, netID, and the section you are registered for.</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <br />
 					
                     
-
-					
-
-					<!-- Homework Questions -->
+    <!-- Homework Questions -->
 
 		<h2>Homework FAQs</h2><br>
 				
-				
-					<button class="accordion">Q: I registered late for Stat 100. How can I make up late homework?</button>
-				<div class="panel">
-                    <p>A: <i>We drop your 3 lowest HW assignments so if you register late, the one or two assignments you miss will count as dropped assignments. Even though you won't get credit, we still encourage you to try the homework assignments you miss as practice on Lon Capa. </i></p>
-                </div>
-					<br />
-					
-				
-					<button class="accordion">Q: I've had an emergency and was unable to do the homework in time. What should I do?</button>
-				<div class="panel">	
-                    <p>A: <i> At some point or another, many of you will miss a HW or two due to unforeseen circumstances. This is why we allow you to drop your 3 lowest scores. </i></p>
-                		</div>
-					<br />
-				
+        <div class="panel-group" id="homework_faq" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Q: I registered late for Stat 100. How can I make up late homework?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                A: <i>We drop your 3 lowest HW assignments so if you register late, the one or two assignments you miss will count as dropped assignments. Even though you won't get credit, we still encourage you to try the homework assignments you miss as practice on Lon Capa. </i>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Q: I've had an emergency and was unable to do the homework in time. What should I do?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                A: <i> At some point or another, many of you will miss a HW or two due to unforeseen circumstances. This is why we allow you to drop your 3 lowest scores. </i>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q: I have a technical glitch with Lon Capa that is not allowing me to complete the homework. What should I do?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">
+                A: <i>Contact our technical specialist, David Collier <a href="mailto:dacollie@illinois.edu">(dacollie@illinois.edu)</a>. Take a screenshot of what you are seeing and describe the problem thoroughly. Remember, there's bound to be computer glitches sometimes so try to start your homework early so you don't miss the assignment due date. Again, if you do miss the due date because of technical issues, it will just count as a dropped homework. </i>
+              </div>
+            </div>
+          </div>
 
-				
-					<button class="accordion">Q: I have a technical glitch with Lon Capa that is not allowing me to complete the homework. What should I do?</button> 
-                    <div class="panel">
-                    <p>A: <i>Contact our technical specialist, David Collier <a href="mailto:dacollie@illinois.edu">(dacollie@illinois.edu)</a>. Take a screenshot of what you are seeing and describe the problem thoroughly. Remember, there's bound to be computer glitches sometimes so try to start your homework early so you don't miss the assignment due date. Again, if you do miss the due date because of technical issues, it will just count as a dropped homework. </i></p>
-               			</div>
-					<br />
+
+        </div>
 
                     
                     
@@ -357,10 +399,7 @@ $(document).ready(function () {
                <div class="panel">    
                     <p>A: <i>Details to come!</i></p>
                 </div>			<br><br />
-					
-				</td>
-			</tr>
-		</table>
+
 
 <script>
 // add bootstrap table styles to pandoc tables
@@ -382,5 +421,6 @@ $(document).ready(function () {
   })();
 </script>
 
+</div>
 </body>
 </html>
