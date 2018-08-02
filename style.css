@@ -54,3 +54,11 @@ button.accordion:before {
 button.accordion.active:before {
      content: '\2796';
 }
+
+div.panel {
+     padding: 0px 18px;
+     background-color: white;
+     max-height: 0;
+     overflow: hidden;
+     outline: 1px solid #E0E0E0;
+}
