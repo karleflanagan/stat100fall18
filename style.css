@@ -24,3 +24,33 @@ h1.realtitle {
 table, tr, td {
   padding:10px;
 }
+
+button.accordion {
+     background-color: #F5F5F5;
+     color: #444;
+     cursor: pointer;
+     padding: 10px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 16px;
+     font-weight: bold;
+}
+
+button.accordion.active, button.accordion:hover {
+     background-color: #E0E0E0;
+}
+
+button.accordion:before {
+     content: '\2795';
+     font-size: 20px;
+     color: #777;
+     font-weight: bold;
+     margin-left: 0.5em;
+     float: right;
+}
+
+button.accordion.active:before {
+     content: '\2796';
+}
